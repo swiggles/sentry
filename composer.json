@@ -57,7 +57,7 @@
 			"src/migrations"
 		],
 		"psr-4": {
-			"Cartalyst\\Sentry\\": "src/"
+			"Cartalyst\\Sentry\\": "src/Cartalyst/Sentry/"
 		}
 	},
 	"extra": {
