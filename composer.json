@@ -30,16 +30,19 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+        "php": ">=5.5.0"
 	},
 	"require-dev": {
 		"mockery/mockery": "0.9.*",
 
-		"illuminate/cookie": "~4.0|~5.0",
-		"illuminate/database": "~4.0|~5.0",
-		"illuminate/http": "~4.0|~5.0",
-		"illuminate/session": "~4.0|~5.0",
-		"ircmaxell/password-compat": "1.0.*"
+        "illuminate/contracts": "5.0.*",
+        "illuminate/cookie": "5.0.*",
+        "illuminate/database": "5.0.*",
+        "illuminate/http": "5.0.*",
+        "illuminate/session": "5.0.*",
+        "illuminate/support": "5.0.*",
+
+        "ircmaxell/password-compat": "~1.0"
 	},
 	"suggest": {
 		"illuminate/database": "Default sentry user, group and throttling implementations.",
@@ -53,19 +56,20 @@
 			"src/Cartalyst/Sentry/Users/Exceptions.php",
 			"src/migrations"
 		],
-		"psr-0": {
-			"Cartalyst\\Sentry": "src/"
+		"psr-4": {
+			"Cartalyst\\Sentry\\": "src/"
 		}
 	},
 	"extra": {
 		"component": "package",
-		"frameworks": ["Laravel 3", "Laravel 4", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
+		"frameworks": ["Laravel 5", "Laravel 3", "Laravel 4", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
 		"versions": {
 			"1": "1.1/master",
-			"2": "master"
+			"2": "master",
+            "3": "3.0"
 		},
 		"branch-alias": {
-			"dev-master": "2.2.x-dev"
+			"dev-master": "3.0-dev"
 		}
 	},
 	"minimum-stability": "dev"
